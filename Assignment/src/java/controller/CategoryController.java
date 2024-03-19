@@ -11,14 +11,11 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.util.List;
-import model.Cart;
 import model.Category;
-import model.Item;
 import model.Product;
 
 @WebServlet(name="CategoryController", urlPatterns={"/category"})
@@ -46,26 +43,6 @@ public class CategoryController extends HttpServlet {
         request.setAttribute("listC", listC);
         request.setAttribute("newList", newList);
         request.setAttribute("tag", cateID);
-        
-        Cookie[] arr = request.getCookies();
-        String txt = "";
-        if (arr != null) {
-            for (Cookie o : arr) {
-                if (o.getName().equals("cart")) {
-                    txt += o.getValue();
-                }
-            }
-        }
-        Cart cart = new Cart(txt, list);   
-        List<Item> listItem = cart.getItems();
-        int n;
-        if (listItem != null) {
-            n = listItem.size();
-        } else {
-            n = 0;
-        }
-        request.setAttribute("size", n);
-        
         request.getRequestDispatcher("shop.jsp").forward(request, response);
     } 
 

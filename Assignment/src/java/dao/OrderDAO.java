@@ -8,13 +8,20 @@ import java.time.LocalDate;
 import model.Account;
 import model.Cart;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 import model.Item;
+import model.ItemOrder;
+import model.Product;
 
 /**
  *
  * @author ThanhPham
  */
 public class OrderDAO extends DBContext {
+    
+    PreparedStatement ps = null;
+    ResultSet rs = null;
 
     public void addOrder(Account a, Cart cart) {
         LocalDate curDate = LocalDate.now();
@@ -66,7 +73,33 @@ public class OrderDAO extends DBContext {
         }
     }
 
-    public static void main(String[] args) {
+    public List<ItemOrder> getAllOrderbyAccountId(int id) {
+        List<ItemOrder> list = new ArrayList<>();
+        String query = "select o.id,p.name,od.quantity,p.price,o.date,od.price from OrderDetail od\n"
+                + "join [Order] o on o.id = od.oid\n"
+                + "join [Product] p on p.id = od.pid\n"
+                + "join [Account] a on a.id = o.Aid\n"
+                + "where a.id = ?";
+        try {
+            ps = connection.prepareStatement(query);
+            ps.setInt(1, id);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                list.add(new ItemOrder(rs.getInt(1),
+                        rs.getString(2),
+                        rs.getInt(3),
+                        rs.getDouble(4),
+                        rs.getString(5),
+                        rs.getDouble(4)));
+            }
+        } catch (Exception e) {
 
+        }
+        return list;
+    }
+
+    public static void main(String[] args) {
+        OrderDAO o = new OrderDAO();
+        System.out.println(o.getAllOrderbyAccountId(11));
     }
 }

@@ -46,8 +46,7 @@
                             </div>
                         </div>
                         <div class="forgot-register">
-                        <a href="#">Forgot Password?</a>
-                        <a id="register-link" href="register.jsp">Register</a></p>
+                        <a id="register-link" href="register.jsp" style="margin-left: 300px; color: #20c997;">Register</a></p>
                         <input type="submit" class="btn" value="Login">
                         </div>
                     </form>

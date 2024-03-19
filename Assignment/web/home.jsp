@@ -7,8 +7,8 @@
         <meta charset="utf-8">
         <title>Home</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free HTML Templates" name="keywords">
-        <meta content="Free HTML Templates" name="description">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
@@ -112,6 +112,24 @@
 
             </div>
         </div>
+        <!--         Products End -->
+        <!--        <script type="text/javascript">
+                    function buy(id) {
+                        var m = document.f.num.value;
+                        document.f.action = "buy?id=" + id + "&num=" + m;
+                        document.f.submit();
+                    }
+                </script>-->
+
+
+        <!------------------------------------------------------------------->
+
+
+        <!--------------------------------------------------------------------------->
+
+
+
+
 
         <!-- Products Start -->
         <div class="container-fluid pt-5">
@@ -134,7 +152,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between bg-light border">
                                     <a href="detail?pid=${o.id}" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                                    <a href="buy?id=${o.id}&num=1" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                                    <a href="buy?id=${id}&num=1" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
                                 </div>
 
                             </div>

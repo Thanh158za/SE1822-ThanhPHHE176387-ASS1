@@ -6,10 +6,10 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Shopping Cart</title>
+        <title>Manager Product</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free HTML Templates" name="keywords">
-        <meta content="Free HTML Templates" name="description">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
@@ -39,11 +39,11 @@
             <!-- Page Header Start -->
             <div class="container-fluid bg-secondary mb-5">
                 <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
-                    <h1 class="font-weight-semi-bold text-uppercase mb-3">Shopping Cart</h1>
+                    <h1 class="font-weight-semi-bold text-uppercase mb-3">Manager Product</h1>
                     <div class="d-inline-flex">
                         <p class="m-0"><a href="">Home</a></p>
                         <p class="m-0 px-2">-</p>
-                        <p class="m-0">Manager Account</p>
+                        <p class="m-0">Manager Product</p>
                     </div>
                 </div>
             </div>
@@ -120,21 +120,6 @@
                                     <td class="align-middle">${o.price}</td>
                                     <td class="align-middle">${o.title}</td>
                                     <td class="align-middle">${o.description}</td>
-<!--                                    <td class="align-middle">
-                                        <div class="input-group quantity mx-auto" style="width: 100px;">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-sm btn-primary btn-minus" >
-                                                    <i class="fa fa-minus"></i>
-                                                </button>
-                                            </div>
-                                            <input type="text" class="form-control form-control-sm bg-secondary text-center" value="1">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-sm btn-primary btn-plus">
-                                                    <i class="fa fa-plus"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </td>-->
                                     <td class="align-middle">${o.quantity}</td>
                                     <td class="align-middle "><a href="delete?pid=${o.id}"><button class="btn btn-sm btn-primary"><i class="fa fa-times"></i></button></a></td>
                                     <td class="align-middle "><a href="loadProduct?pid=${o.id}"><button class="btn btn-sm btn-primary"><i class="fa fa-pencil-alt"></i></button></a></td>

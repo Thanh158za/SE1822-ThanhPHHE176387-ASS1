@@ -75,7 +75,7 @@ public class ShopController extends HttpServlet {
                 }
             }
         }
-        Cart cart = new Cart(txt, list);   
+        Cart cart = new Cart(txt, paginatedList);
         List<Item> listItem = cart.getItems();
         int n;
         if (listItem != null) {
@@ -84,7 +84,7 @@ public class ShopController extends HttpServlet {
             n = 0;
         }
         request.setAttribute("size", n);
-    
+        
     request.getRequestDispatcher("shop.jsp").forward(request, response);
     } 
 

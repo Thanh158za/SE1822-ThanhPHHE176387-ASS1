@@ -80,7 +80,7 @@ public class ProductDAO extends DBContext {
 
         }
         return list;
-    }
+    }   
 
     public List<Product> getNewProduct() {
         List<Product> list = new ArrayList<>();
@@ -215,31 +215,7 @@ public class ProductDAO extends DBContext {
 
         }
         return list;
-    }
-
-    public List<Product> getProductByColor(String color) {
-        List<Product> list = new ArrayList<>();
-        String query = "select * from Product\n"
-                + "where color = ?";
-        try {
-            ps = connection.prepareStatement(query);
-            ps.setString(1, color);
-            rs = ps.executeQuery();
-            while (rs.next()) {
-                list.add(new Product(rs.getInt(1),
-                        rs.getString(2),
-                        rs.getString(3),
-                        rs.getDouble(4),
-                        rs.getString(5),
-                        rs.getString(6),
-                        rs.getString(7),
-                        rs.getInt(8)));
-            }
-        } catch (Exception e) {
-
-        }
-        return list;
-    }
+    }   
 
     public List<Product> getNewProductBycID(String cID) {
         List<Product> list = new ArrayList<>();
@@ -429,6 +405,6 @@ public class ProductDAO extends DBContext {
     public static void main(String[] args) {
         ProductDAO dao = new ProductDAO();
 
-        System.out.println(dao.getProductByColor("Black"));
+        System.out.println();
     }
 }

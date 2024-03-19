@@ -38,10 +38,11 @@ public class ProductController extends HttpServlet {
         String color = request.getParameter("color");
         ProductDAO dao = new ProductDAO();
         CategoryDAO Cdao = new CategoryDAO();
-        List<Product> list = dao.getAllProduct();       
+      
         List<Category> listC = Cdao.getAllCategory();
-        request.setAttribute("list", list);
+
         request.setAttribute("listC", listC);
+
         request.getRequestDispatcher("shop.jsp").forward(request, response);
     } 
 

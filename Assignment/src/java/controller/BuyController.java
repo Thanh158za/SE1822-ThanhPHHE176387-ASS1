@@ -39,7 +39,6 @@ public class BuyController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         CartDAO dao = new CartDAO();
         List<Product> list = dao.getAllProduct();
-        
         Cookie[] arr = request.getCookies();
         String txt ="";
         if (arr != null) {

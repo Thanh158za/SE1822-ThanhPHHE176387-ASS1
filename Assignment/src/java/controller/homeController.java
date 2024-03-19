@@ -55,7 +55,6 @@ public class homeController extends HttpServlet {
             }
         }
         Cart cart = new Cart(txt, list);
-        Cart cart1 = new Cart(txt, newList);
         List<Item> listItem = cart.getItems();
         int n;
         if (listItem != null) {

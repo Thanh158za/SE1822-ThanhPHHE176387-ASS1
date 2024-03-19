@@ -7,8 +7,8 @@
         <meta charset="utf-8">
         <title>Shop</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free HTML Templates" name="keywords">
-        <meta content="Free HTML Templates" name="description">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
@@ -200,12 +200,12 @@
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                                 <h6 class="text-truncate mb-3">${o.name}</h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>${o.price}</h6><h6 class="text-muted ml-2"><del>${o.price}</del></h6>
+                                    <h6>${o.price}</h6><h6 class="text-muted ml-2"><del>${o.price * 2}</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
                                 <a href="detail?pid=${o.id}" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                                <a href="buy?id=${o.id}&num=1" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                                <a href="cart.jsp" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
                             </div>
 
                         </div>
