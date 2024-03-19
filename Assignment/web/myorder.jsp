@@ -80,7 +80,7 @@
                                     <td class="align-middle">${o.quantity}</td>
                                     <td class="align-middle">${o.price}</td>
                                     <td class="align-middle">${o.date}</td>
-                                    <td class="align-middle">${o.totalprice}</td>
+                                    <td class="align-middle">${o.price * o.quantity}</td>
                                 </tr> 
                             </c:forEach>
                         </tbody>
