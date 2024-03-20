@@ -4,7 +4,7 @@
 </p>
 
 # HOME
-
+![Static Badge](https://img.shields.io/badge/HOME-GREEN)
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/78a9c840-6eeb-4d40-930c-cf35cdbd8779)
 
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/a472e076-15b2-4e28-a798-d9b6c35a76bc)
