@@ -15,7 +15,7 @@
 <p align="center">
   <h3 align="center">LIST OF PRODUCT BY CATEGORY </h3>
 </p>
-![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/2b80ab4b-e662-46ef-9f8a-8e3f8c89dbeb)
+![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/ddc171e7-d106-4df7-8306-c8ded3f55cbe)
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/4d68e65a-daeb-4cdc-9aab-53ecb6288750)
 
 <p align="center">
