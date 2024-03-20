@@ -4,6 +4,7 @@
 </p>
 
 # DATABASE
+![Static Badge](https://img.shields.io/badge/DATABASE-GREEN)
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/3db5fa92-71c1-4c4d-bde4-159efdccb09b)
 
 
