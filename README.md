@@ -17,6 +17,7 @@
 <p align="center">
   <h3 align="center">LIST OF PRODUCT BY CATEGORY </h3>
 </p>
+
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/ddc171e7-d106-4df7-8306-c8ded3f55cbe)
 
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/4d68e65a-daeb-4cdc-9aab-53ecb6288750)
@@ -24,6 +25,7 @@
 <p align="center">
   <h3 align="center">SHOP </h3>
 </p>
+
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/34e9a4b2-e0e7-4f33-b81c-27a8327ac434)
 
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/28ce73ff-6bbb-4a09-b10e-8a8cc3e248d9)
@@ -33,6 +35,7 @@
 <p align="center">
   <h3 align="center">SEARCH </h3>
 </p>
+
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/392ef30e-ea7a-4026-bf7a-8163b5eba5c5)
 
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/0e739656-c2d3-4691-a0aa-1834277377eb)
@@ -42,6 +45,7 @@
 <p align="center">
   <h3 align="center">VIEW DETAIL </h3>
 </p>
+
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/af8519d6-8b0b-4f10-b5af-343c7b6bb0ea)
 
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/feb040de-083a-4dc2-8d6a-6ed2f9d7cab0)
@@ -49,6 +53,7 @@
 <p align="center">
   <h3 align="center">ADD TO CART </h3>
 </p>
+
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/af8519d6-8b0b-4f10-b5af-343c7b6bb0ea)
 
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/7117b4e9-1831-4e92-bb40-28c988145b6e)
@@ -56,6 +61,7 @@
 <p align="center">
   <h3 align="center">LOGIN</h3>
 </p>
+
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/4526c1db-9d79-4a5d-8fe1-78429675e567)
 
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/bccee23f-9b75-464b-afbc-5354a5c7090c)
@@ -80,12 +86,14 @@
 <p align="center">
   <h3 align="center">MY ORDER</h3>
 </p>
+
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/072d6059-feba-492d-9065-7870cdbcb998)
 
 
 <p align="center">
   <h3 align="center">MANAGER PRODUCT</h3>
 </p>
+
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/9fb9dc23-6074-45a6-85ed-0b8e0bcd2ece)
 
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/e7914194-e37f-443d-81ab-60017703d581)
@@ -93,11 +101,13 @@
 <p align="center">
   <h3 align="center">MANAGER ORDER</h3>
 </p>
+
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/164fd122-7fb5-49c1-b92a-dcf5435d7232)
 
 <p align="center">
   <h3 align="center">MANAGER ACCOUNT</h3>
 </p>
+
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/86cdfe16-eb02-424b-ae11-658688caa994)
 
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/3077a4cf-fb64-468b-8861-7c37ed70f69b)
