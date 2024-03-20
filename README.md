@@ -3,4 +3,4 @@
   <h3 align="center">SE1822 - ThanhPHHE176387 - ASS1 </h3>
 </p>
 
-<img src="https://img.icons8.com/fluent/48/000000/mailing.png"/>
+<img src="![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/577a2631-0149-4597-9e52-59a4fd35b43e)"/>
