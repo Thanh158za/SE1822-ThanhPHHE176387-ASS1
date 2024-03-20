@@ -10,6 +10,7 @@ import model.Cart;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import model.InformationAccountOrder;
 import model.Item;
 import model.ItemOrder;
 import model.Product;
@@ -19,7 +20,7 @@ import model.Product;
  * @author ThanhPham
  */
 public class OrderDAO extends DBContext {
-    
+
     PreparedStatement ps = null;
     ResultSet rs = null;
 
@@ -98,8 +99,32 @@ public class OrderDAO extends DBContext {
         return list;
     }
 
+    public List<InformationAccountOrder> getInformationAccountOrder() {
+        List<InformationAccountOrder> list = new ArrayList<>();
+        String query = "select a1.fullname,a1.email,p.name,od.quantity,od.price,p.sell_ID from Product p\n"
+                + "join [OrderDetail] od on od.pid = p.id\n"
+                + "join Account a on p.sell_ID = a.id\n"
+                + "join [Order] o on o.id = od.oid\n"
+                + "join Account a1 on a1.id = o.Aid";
+        try {
+            ps = connection.prepareStatement(query);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                list.add(new InformationAccountOrder(rs.getString(1),
+                                                     rs.getString(2),
+                                                     rs.getString(3),
+                                                     rs.getInt(4),
+                                                     rs.getDouble(5),
+                                                     rs.getInt(6)));
+            }
+        } catch (Exception e) {
+
+        }
+        return list;
+    }
+
     public static void main(String[] args) {
         OrderDAO o = new OrderDAO();
-        System.out.println(o.getAllOrderbyAccountId(11));
+        System.out.println(o.getInformationAccountOrder());
     }
 }

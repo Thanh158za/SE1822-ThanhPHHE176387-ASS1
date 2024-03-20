@@ -60,8 +60,8 @@ public class BuyController extends HttpServlet {
         Cookie c = new Cookie("cart", txt);
         c.setMaxAge(2 * 24 * 60 * 60);
         response.addCookie(c);
-        Cart cart = new Cart(txt, list);
-        int size = cart.getItems().size();
+//        Cart cart = new Cart(txt, list);
+//        int size = cart.getItems().size();
         request.getRequestDispatcher("home").forward(request, response);
     }
 

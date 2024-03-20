@@ -5,24 +5,26 @@
 
 package controller;
 
-import dao.CategoryDAO;
-import dao.ProductDAO;
+import dao.OrderDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.List;
-import model.Cart;
-import model.Category;
-import model.Item;
-import model.Product;
+import model.Account;
+import model.InformationAccountOrder;
 
-@WebServlet(name="DetailController", urlPatterns={"/detail"})
-public class DetailController extends HttpServlet {
+/**
+ *
+ * @author ThanhPham
+ */
+@WebServlet(name="ManagerOrder", urlPatterns={"/managerorder"})
+public class ManagerOrder extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -34,16 +36,18 @@ public class DetailController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String id = request.getParameter("pid");
-        ProductDAO dao = new ProductDAO();
-        CategoryDAO Cdao = new CategoryDAO();
-        Product p = dao.getProductByID(id);       
-        List<Category> listC = Cdao.getAllCategory();
-        List<Product> newList = dao.getNewProduct();
-        request.setAttribute("detail", p);        
-        request.setAttribute("listC", listC);
-        request.getRequestDispatcher("detail.jsp").forward(request, response);
-        
+        OrderDAO dao = new OrderDAO();
+        HttpSession session = request.getSession();
+        Account a = (Account) session.getAttribute("acc");
+        int id = a.getId();
+        List<InformationAccountOrder> list = new ArrayList<>();
+        for (InformationAccountOrder order : dao.getInformationAccountOrder()) {
+            if(order.getSellId() == id){
+                list.add(order);
+            }
+        }
+        request.setAttribute("list", list);
+        request.getRequestDispatcher("managerorder.jsp").forward(request, response);
     } 
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

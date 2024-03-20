@@ -401,6 +401,14 @@ public class ProductDAO extends DBContext {
 
         }
     }
+    
+    public List<Product> getListByPage(List<Product> list,int start,int end){
+        ArrayList<Product> arr = new ArrayList<>();
+        for (int i = start; i < end; i++) {
+            arr.add(list.get(i));
+        }
+        return arr;
+    }
 
     public static void main(String[] args) {
         ProductDAO dao = new ProductDAO();

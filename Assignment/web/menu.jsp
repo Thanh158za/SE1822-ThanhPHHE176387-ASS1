@@ -20,13 +20,16 @@
                     <c:if test="${sessionScope.acc.isSell == 1}">
                         <a href="manager" class="dropdown-item">Manager Product</a>
                     </c:if>
+                    <c:if test="${sessionScope.acc.isSell == 1}">
+                        <a href="managerorder" class="dropdown-item">Manager Order</a>
+                    </c:if>
                     <c:if test="${sessionScope.acc.isAdmin == 1}">
                         <a href="manageraccount" class="dropdown-item">Manager Account</a>
                     </c:if>
                 </div>
             </div>
             <c:if test="${sessionScope.acc != null}">
-            <a href="myorder" class="nav-item nav-link">My Order</a>
+                <a href="myorder" class="nav-item nav-link">My Order</a>
             </c:if>
         </div>
 

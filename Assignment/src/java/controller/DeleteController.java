@@ -31,7 +31,7 @@ public class DeleteController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String pid = request.getParameter("pid");
+        String pid = request.getParameter("sid");
         ProductDAO dao = new ProductDAO();
         dao.deleteProduct(pid);
         response.sendRedirect("manager");

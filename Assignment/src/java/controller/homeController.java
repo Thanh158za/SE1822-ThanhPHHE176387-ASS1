@@ -40,11 +40,9 @@ public class homeController extends HttpServlet {
         List<Product> list = dao.getTrendyProduct();
         List<Category> listC = Cdao.getAllCategory();
         List<Product> newList = dao.getNewProduct();
-        //System.out.println(list);
         request.setAttribute("list", list);
         request.setAttribute("listC", listC);
         request.setAttribute("newList", newList);
-//        request.getRequestDispatcher("home.jsp").forward(request, response);
         Cookie[] arr = request.getCookies();
         String txt = "";
         if (arr != null) {

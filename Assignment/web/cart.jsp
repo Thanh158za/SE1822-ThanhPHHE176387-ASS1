@@ -83,7 +83,7 @@
                                     </td>                           
                                     <td class="align-middle ">
                                         <form action="process" method="post">
-                                            <input type="hidden" name="id" value="${i.product.id}"/>
+                                            <input type="hidden" name="sid" value="${i.product.id}"/>
                                             <input type="submit" class="btn btn-sm btn-primary" value="X"/>
                                         </form>
                                     </td>
