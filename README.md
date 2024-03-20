@@ -69,7 +69,8 @@
 <p align="center">
   <h3 align="center">MY ORDER</h3>
 </p>
-![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/8f8ece43-b8ab-430a-8f69-9673b1d5fb60)
+![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/072d6059-feba-492d-9065-7870cdbcb998)
+
 
 <p align="center">
   <h3 align="center">MANAGER PRODUCT</h3>
