@@ -3,7 +3,7 @@
   <h3 align="center">SE1822 - ThanhPHHE176387 - ASS1 </h3>
 </p>
 
-# HOME :))
+# HOME
 ![Static Badge](https://img.shields.io/badge/HOME-GREEN)
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/78a9c840-6eeb-4d40-930c-cf35cdbd8779)
 
@@ -13,7 +13,7 @@
 
 
 # LIST OF PRODUCT BY CATEGORY
-
+![Static Badge](https://img.shields.io/badge/LIST OF PRODUCT BY CATEGORY-GREEN)
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/ddc171e7-d106-4df7-8306-c8ded3f55cbe)
 
 ![image](https://github.com/Thanh158za/SE1822-ThanhPHHE176387-ASS1/assets/137173876/4d68e65a-daeb-4cdc-9aab-53ecb6288750)
