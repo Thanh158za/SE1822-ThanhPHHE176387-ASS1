@@ -4,10 +4,10 @@
 </p>
 
 # NAME OF ASSIGNMENT 
-## SMART WATCH SHOP
+### SMART WATCH SHOP
 
 # CHỨC NĂNG
-## THÊM,SỬA,XÓA,TÌM KIẾM,...
+### THÊM,SỬA,XÓA,TÌM KIẾM,...
 
 # DATABASE
 ![Static Badge](https://img.shields.io/badge/DATABASE-GREEN)
