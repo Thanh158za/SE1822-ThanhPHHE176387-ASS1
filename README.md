@@ -7,7 +7,7 @@
 ### SMART WATCH SHOP
 
 # CHỨC NĂNG
-### THÊM,SỬA,XÓA,TÌM KIẾM,...
+### ADD,EDIT,DELETE,SEARCH,...
 
 # DATABASE
 ![Static Badge](https://img.shields.io/badge/DATABASE-GREEN)
